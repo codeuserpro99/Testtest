@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.MusicPlayer" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/dark_maroon</item>
+        <item name="colorPrimaryVariant">@color/deep_burgundy</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/bright_red</item>
+        <item name="colorSecondaryVariant">@color/bright_red</item> <!-- Or a darker shade if available -->
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Window background -->
+        <item name="android:windowBackground">@drawable/main_background_gradient</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- Placeholder for Pixelated Font -->
+    <style name="TextAppearance.App.PixelFont" parent="TextAppearance.AppCompat">
+        <!-- Font family will be set here later -->
+    </style>
+
+    <!-- Style for Circular Buttons -->
+    <style name="Widget.App.CircularButton" parent="Widget.MaterialComponents.Button.Icon">
+        <item name="android:background">@drawable/circular_button_background</item> <!-- This drawable needs to be created -->
+        <item name="android:textColor">@color/white</item>
+        <item name="android:elevation">4dp</item> <!-- Example elevation -->
+        <!-- Ensure buttons are circular, this might need specific width/height or a custom drawable background -->
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.App.Button.Circle</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.App.Button.Circle" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <!-- Bottom Navigation Text Appearances -->
+    <style name="TextAppearance.App.PixelFont.Small" parent="TextAppearance.App.PixelFont">
+        <item name="android:textSize">10sp</item>
+    </style>
+    <style name="TextAppearance.App.PixelFont.Small.Active" parent="TextAppearance.App.PixelFont.Small">
+        <!-- Color is handled by the selector, but can be overridden here if needed -->
+        <!-- <item name="android:textColor">@color/bright_red</item> -->
+    </style>
+    <style name="TextAppearance.App.PixelFont.Small.Inactive" parent="TextAppearance.App.PixelFont.Small">
+        <!-- Color is handled by the selector, but can be overridden here if needed -->
+        <!-- <item name="android:textColor">@color/time_label_muted_rose</item> -->
+    </style>
+
+</resources>
