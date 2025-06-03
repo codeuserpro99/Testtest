@@ -17,9 +17,9 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <!-- Placeholder for Pixelated Font -->
-    <style name="TextAppearance.App.PixelFont" parent="TextAppearance.AppCompat">
-        <!-- Font family will be set here later -->
+    <!-- Pixelated Font -->
+    <style name="TextAppearance.App.PixelFont" parent="android:TextAppearance">
+        <item name="android:fontFamily">@font/pixelify_sans</item>
     </style>
 
     <!-- Style for Circular Buttons -->

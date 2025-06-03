@@ -122,7 +122,7 @@
                     android:layout_width="56dp"
                     android:layout_height="56dp"
                     android:background="@drawable/circular_semi_transparent_dark_red_background"
-                    android:src="?android:attr/media_previous"
+                    android:src="@drawable/ic_skip_previous_24dp"
                     android:contentDescription="Previous Track"
                     android:elevation="4dp"
                     android:padding="12dp"
@@ -135,7 +135,7 @@
                     android:layout_marginStart="24dp"
                     android:layout_marginEnd="24dp"
                     android:background="@drawable/circular_bright_red_background"
-                    android:src="?android:attr/media_play"
+                    android:src="@drawable/ic_play_arrow_24dp"
                     android:contentDescription="Play or Pause"
                     android:elevation="6dp"
                     android:padding="16dp"
@@ -146,12 +146,25 @@
                     android:layout_width="56dp"
                     android:layout_height="56dp"
                     android:background="@drawable/circular_semi_transparent_dark_red_background"
-                    android:src="?android:attr/media_next"
+                    android:src="@drawable/ic_skip_next_24dp"
                     android:contentDescription="Next Track"
                     android:elevation="4dp"
                     android:padding="12dp"
                     android:scaleType="fitCenter"/>
             </LinearLayout>
+
+            <Button
+                android:id="@+id/show_mock_dialog_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="Show Mock Dialog (For Testing Auto-Accept)"
+                android:textAppearance="@style/TextAppearance.App.PixelFont"
+                android:padding="12dp"
+                android:backgroundTint="@color/bright_red"
+                android:textColor="@color/white"/>
 
         </LinearLayout>
     </ScrollView>
